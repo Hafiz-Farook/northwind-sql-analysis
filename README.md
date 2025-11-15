@@ -10,21 +10,21 @@ The goal of this project is to evaluate company performance across pricing, logi
 northwind-sql-analysis/
 │
 ├── queries/                # All SQL scripts (Q1–Q10)
-│   ├── Q1.sql
-│   ├── Q2.sql
+│   ├── 01_query.sql
+│   ├── 02_query.sql
 │   ├── ...
-│   └── Q10.sql
+│   └── 10_query.sql
 │
 ├── csv/                    # Query output results (CSV format)
-│   ├── Q1.csv
-│   ├── Q2.csv
+│   ├── 01_results.csv
+│   ├── 02_results.csv
 │   ├── ...
-│   └── Q10.csv
+│   └── 10_results.csv
 │
 ├── northwind.postgre.sql   # The original PostgreSQL dataset
 │
 ├── report/
-│   └── final-report.pdf    # Final written analysis
+│   └── 94692-DSP-AT1 Report Template.docx    # Final written analysis
 │
 └── README.md               # Project documentation
 
@@ -74,16 +74,16 @@ psql northwind < northwind.postgre.sql
 Each business question corresponds to a separate SQL script:
 
 File	Description
-queries/Q1.sql	Product pricing range analysis
-queries/Q2.sql	Logistics shipping delay analysis (1998)
-queries/Q3.sql	Employee hire age + manager details
-queries/Q4.sql	Monthly freight + orders (1997–1998)
-queries/Q5.sql	Price increase percentage detection
-queries/Q6.sql	Category revenue by price range
-queries/Q7.sql	Supplier regional stock analysis
-queries/Q8.sql	Product vs category average/median
-queries/Q9.sql	Employee sales KPIs
-queries/Q10.sql	Category-employee sales distribution
+queries/01_query.sql	Product pricing range analysis
+queries/02_query.sql	Logistics shipping delay analysis (1998)
+queries/03_query.sql	Employee hire age + manager details
+queries/04_query.sql	Monthly freight + orders (1997–1998)
+queries/05_query.sql	Price increase percentage detection
+queries/06_query.sql	Category revenue by price range
+queries/07_query.sql	Supplier regional stock analysis
+queries/08_query.sql	Product vs category average/median
+queries/09_query.sql	Employee sales KPIs
+queries/10_query.sql	Category-employee sales distribution
 How to run
 
 In pgAdmin or DBeaver:
@@ -100,7 +100,7 @@ Save it in /csv/ with the same question number
 
 The final written analysis is located in:
 
-report/final-report.pdf
+report/94692-DSP-AT1 Report Template.docx
 
 
 This document summarises:
